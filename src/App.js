@@ -1,13 +1,15 @@
 
 import './App.css';
-import BlogBody from './Components/Blog';
-import NavBar from './Components/NavBar';
+
+import AppRoutes from './Utility/Routers';
+
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
-      <BlogBody/>
+   
+      <AppRoutes/>
+      
     </div>
   );
 }

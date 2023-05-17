@@ -21,7 +21,7 @@
   padding-top: 1rem;
   padding-bottom: 1rem; */
 
-hr{
+.firstHr{
   border: 2px solid #F0F0F0;
   width: 80%;
 }
@@ -37,24 +37,29 @@ hr{
       display: flex;
       width: 80%;
       justify-content: space-evenly;
+      
 }
 
 
 
 
 .mainContainer{
-  position: relative;
-  padding-top: 2rem;
+  /* position: relative; */
+      padding-top: 2rem;
+      display: flex;
+      justify-content: center;
+      /* width: 80%; */
 }
 
 .subContainer{
-  position: absolute;
-  left: 10%;
-  width: 80%;
+  /* position: absolute;
+  left: 10%;*/
+  width: 75%; 
+
 }
 
 .imageContainer{
-  height: 606px;
+  height: 420px;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -63,7 +68,7 @@ hr{
 }
 
 .firstImage{
-  background-image: url(http://localhost:3000/static/media/img8.7c6f53b60aad84728eba.jpg);
+  background-image: url(./Components/Images/img8.jpg);
   background-size: cover;
   grid-row: span 2;
   grid-column: 1 / span 2;
@@ -85,9 +90,9 @@ hr{
 .firstImageTextTwo{
   position: absolute;
     top: 80%;
-    color: #FCFCFC;
+    /* color: #FCFCFC;
+    opacity: 0.57; */
     left: 5%;
-    opacity: 0.57;
 }
 
 .secondImage{
@@ -99,7 +104,7 @@ hr{
 }
 .secondImageTextOne{
   position: absolute;
-  top: 40%;
+  top: 45%;
   color: #ffff;
   font-size: 30px;
   opacity: 1; 
@@ -118,8 +123,8 @@ hr{
 .secondImageTextThree{
   position: absolute;
   top: 82%;
-  opacity: 0.57;
-  color: #FCFCFC;
+  /* opacity: 0.57;
+  color: #FCFCFC; */
   LEFT: 4%;
 
 }
@@ -129,4 +134,134 @@ hr{
   background-size: cover;
   position: relative;
   border-radius: 7px;
+}
+
+
+.thirdImageTextOne{
+  position: absolute;
+  top: 45%;
+  color: #ffff;
+  font-size: 30px;
+  opacity: 1; 
+  LEFT: 4%;
+
+}
+
+.thirdImageTextTwo{
+  position: absolute;
+  top: 55%;
+  color: #ffff;
+  font-size: 30px;
+  opacity: 1;         
+  LEFT: 4%;
+
+}
+
+.thirdImageTextThree{
+  position: absolute;
+  top: 82%;
+ 
+  LEFT: 4%;
+
+}
+/* .bannerTravel {
+  opacity: 0.57;
+  color: #FCFCFC;
+}    */
+
+.genericHeaderHr{
+  width: 5rem;
+border: 2px solid red;
+}
+
+
+.genericDate{
+  opacity: 0.57;
+  color: #FCFCFC;
+}
+
+.TheLatestImg{
+  width: 100%;
+  /* height: 224px; */
+  height: 180px;
+}
+
+.theLatest{
+  /* display: flex;  */
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding-top: 3rem;
+}
+
+.genericDateExt{
+  color: #404040;
+opacity: 0.24;
+}
+
+.genericDateTravel{
+  color: #404040;
+  opacity: 1;}
+
+  .bannerContent{
+    width: 85%;
+  }
+
+  .bannerMainContent{
+    color: #908D8D;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .commonHr{
+    border: 2px solid #F0F0F0;
+  }
+
+  .spacer{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+.LatestArtBlock{
+  display: flex;
+  gap: 25px;
+  position: relative;
+}
+
+.LatestArtDate{
+  position: absolute;
+  bottom: 10px;
+}
+
+.LatestArtDetail{
+  padding-top: 15px;
+}
+
+.latestArtImg2{
+  width: 100%;
+  height: 170px;
+}
+
+.loadMore{
+  padding-top: 2rem;
+}
+
+.arrowText{
+  padding-left: 10px;
+  color: #A2A2A2;
+}
+
+.theLatestbox{
+  box-shadow: 0px 5px 35px #00000008;
+}
+
+
+.homeContainer{
+     /* display: flex; */
+     gap: 40px;
+     /* width: 80%; */
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr;
+     /* border: 2px solid red; */
 }
