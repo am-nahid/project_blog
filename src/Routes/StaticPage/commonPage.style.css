@@ -1,0 +1,66 @@
+.commonParent{
+    position: relative;
+}
+
+
+.editLogo{
+       /* float: left; */
+       padding-left: 10%;
+       display: flex;
+}
+
+.commonHr{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 2px 1px 2px #43353529;
+    border: 2px solid #F0F0F0;
+    /* margin-top: 10px; */
+    width: 80%;
+}
+
+/* .flexProperty{
+    display: flex;
+    justify-content: center;
+} */
+
+.commonContainer{
+ width: 40%;
+}
+.commonProfile{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profileImg{
+  width: 60px
+}
+
+.profileName{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.commonPic1{
+    height: 60px;
+    display: flex;
+    gap: 25px;
+}
+
+.icons{
+    width: 80px;
+}
+
+.MainImage {
+    height: 300px;
+    width: 100%;
+}
+
+.theHeading{
+    text-align: center;
+    /* padding: 10px 0px; */
+    padding-bottom: 2rem;
+}
+
+.descrip{
+    padding-top: 2rem;
+}

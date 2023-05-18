@@ -3,10 +3,12 @@ import '../../App.css'
 
 function Header({headerText}) {
   return (
-    <>
-    <h1><span className='genericHeader'>{headerText}</span></h1>
+    <div className='headerText'>
+      
+
+    <h1 className='genericHeader'>{headerText}</h1>
     <hr className='genericHeaderHr'/>
-    </>
+    </div>
   )
 }
 

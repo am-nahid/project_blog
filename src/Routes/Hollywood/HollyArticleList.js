@@ -1,12 +1,16 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Header, DateExt } from '../../Components'
 import '../../App.css'
+import { AppData } from '../../Utility'
 
-function ArticleList() {
+function HollyArticleList() {
+
+  const [data] =useContext(AppData)
+  console.log(data);
   return (
     <div className='ArticleList'>
       <div className='ArticleListHead'>
-     <Header headerText={"Bollywood"} />
+     <Header headerText={"Hollywood"} />
      </div>
 
 
@@ -193,4 +197,4 @@ function ArticleList() {
   )
 }
 
-export default ArticleList
+export default HollyArticleList

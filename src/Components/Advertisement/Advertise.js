@@ -1,5 +1,4 @@
 import React from 'react'
-import './home.style.css'
 import '../../App.css'
 
 const Advertisement = () => {

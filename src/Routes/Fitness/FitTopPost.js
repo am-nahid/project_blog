@@ -3,7 +3,7 @@ import { Header, DateExt, Advertisement } from '../../Components'
 import '../../App.css'
 
 
-function TopPost() {
+function FitTopPost() {
     return (
       <div className='TopPostsPar'>
       
@@ -73,4 +73,4 @@ function TopPost() {
       </div>
     )
   }
-export default TopPost
+export default FitTopPost

@@ -2,11 +2,11 @@ import React from 'react'
 import { Header, DateExt } from '../../Components'
 import '../../App.css'
 
-function ArticleList() {
+function FoodArticleList() {
   return (
     <div className='ArticleList'>
       <div className='ArticleListHead'>
-     <Header headerText={"Bollywood"} />
+     <Header headerText={"Food"} />
      </div>
 
 
@@ -193,4 +193,4 @@ function ArticleList() {
   )
 }
 
-export default ArticleList
+export default FoodArticleList
