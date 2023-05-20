@@ -12,7 +12,7 @@ const CommonPage = () => {
            </div>
         </div>
         <div className='flexProperty'>
-            <hr className='commonHr'/>
+            <hr className='commonPageHr'/>
         </div>
         <div className='mainContainer'>
         <div className='commonContainer'>

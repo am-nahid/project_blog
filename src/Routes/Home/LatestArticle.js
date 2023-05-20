@@ -1,15 +1,19 @@
 import React from "react";
 import { Header } from "../../Components";
 import { useContext } from "react";
-import { AppData } from "../../Components/Data";
+import { AppData } from "../../Utility/index";
 import { DateExt } from "../../Components";
 import "./home.style.css";
 import "../../App.css";
 
 const LatestArticle = () => {
   // const [data] = useContext(AppData)
+  // if (!data || !Array.isArray(data)) {
+  //   // Handle the case when data is undefined or not an array
+  //   return null;
+  // }
+
   // console.log(data);
-  // console.log("data");
   return (
     <div className="LatestArticlePar">
      {/* <div className="mainContainer"> */}

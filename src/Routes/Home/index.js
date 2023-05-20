@@ -17,23 +17,25 @@ const Home = () => {
     <>
       <Logo />
       <TopNavigation />
-
+      <Store>
       <Banner />
       <Latest />
       <div className="mainContainer">
         <div className="subContainer">
           <div className="homeContainer">
+            
             <LatestArticle />
             
            
             <TopPots/>
+           
           
           </div>
         </div>
       </div>
-      {/* <Store>
-            <LatestStories/>
-        </Store> */}
+    
+    
+        </Store> 
     </>
   );
 };

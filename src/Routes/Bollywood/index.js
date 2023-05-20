@@ -4,6 +4,7 @@ import { Logo, TopNavigation } from '../../Components'
 import ArticleList from './ArticleList'
 import TopPost from './TopPost'
 import '../../App.css'
+import Store from '../../Utility/ContextStore/contextAPI'
 
 function Bollywood() {
     
@@ -11,6 +12,7 @@ function Bollywood() {
     <>
       <Logo/>
       <TopNavigation/>
+      <Store>
       <div className="mainContainer">
         <div className="subContainer">
           <div className="BollywoodContainer">
@@ -19,6 +21,8 @@ function Bollywood() {
       </div>
       </div>
       </div>
+
+      </Store>
 
 
     </>

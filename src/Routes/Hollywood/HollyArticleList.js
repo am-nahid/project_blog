@@ -6,28 +6,86 @@ import { AppData } from '../../Utility'
 function HollyArticleList() {
 
   const [data] =useContext(AppData)
-  console.log(data);
+  // console.log(data);
   return (
     <div className='ArticleList'>
       <div className='ArticleListHead'>
      <Header headerText={"Hollywood"} />
      </div>
+    
+<div className='ArticleListSpace'  >
 
+{
+        data.filter((item)=>item.cat==="Hollywood" 
+        ).map((d,index)=>(
 
-<div className='ArticleListSpace'>
+<div key={index}>
      <div className="LatestArtBlock">
-          <div>
+          <div >
+            
             <img
-              src=" https://cdn.uniacco.com/blog/wp-content/uploads/2021/01/22153121/shanna-beasley-C6o32dvMvc8-unsplash-1536x1152.jpg"
+              src={d.img1}
               alt=""
               className="latestArtImg2"
             />
           </div>
           <div>
-            <h2>Catch waves with an adventure guide</h2>
+            <h2>{d.title1}</h2>
             <p className="LatestArtDetail">
-              Gujarat is vastly underrated and it’s a mystery to us why the
-              region isn’t more well-
+            {d.Overview1}
+            </p>
+            <p className="LatestArtDate">
+              <span className="genericDateTravel">Travel</span>
+              <DateExt dateExt=" / August 21 2017" />
+            </p>
+          </div>
+        </div>
+
+
+        <div className="spacer">
+          <hr className="commonHr" />
+        </div>
+
+
+        <div className="LatestArtBlock">
+          <div>
+            <img
+            src={d.img2}
+              alt=""
+              className="latestArtImg2"
+            />
+          </div>
+          <div>
+            <h2>{d.title2}</h2>
+            <p className="LatestArtDetail">
+            {d.Overview2}
+            </p>
+            <p className="LatestArtDate">
+              <span className="genericDateTravel">Travel</span>
+              <DateExt dateExt=" / August 21 2017" />
+            </p>
+          </div>
+        </div>
+
+        
+
+        <div className="spacer">
+          <hr className="commonHr" />
+        </div>
+
+
+        <div className="LatestArtBlock">
+          <div>
+            <img
+              src={d.img3}
+              alt=""
+              className="latestArtImg2"
+            />
+          </div>
+          <div>
+            <h2>{d.title3}</h2>
+            <p className="LatestArtDetail">
+              {d.Overview3}
             </p>
             <p className="LatestArtDate">
               <span className="genericDateTravel">Travel</span>
@@ -44,16 +102,15 @@ function HollyArticleList() {
         <div className="LatestArtBlock">
           <div>
             <img
-              src=" https://cdn.uniacco.com/blog/wp-content/uploads/2021/01/22153121/shanna-beasley-C6o32dvMvc8-unsplash-1536x1152.jpg"
+            src={d.img4}
               alt=""
               className="latestArtImg2"
             />
           </div>
           <div>
-            <h2>Catch waves with an adventure guide</h2>
+            <h2>{d.title4}</h2>
             <p className="LatestArtDetail">
-              Gujarat is vastly underrated and it’s a mystery to us why the
-              region isn’t more well-
+            {d.Overview4}
             </p>
             <p className="LatestArtDate">
               <span className="genericDateTravel">Travel</span>
@@ -70,16 +127,15 @@ function HollyArticleList() {
         <div className="LatestArtBlock">
           <div>
             <img
-              src=" https://cdn.uniacco.com/blog/wp-content/uploads/2021/01/22153121/shanna-beasley-C6o32dvMvc8-unsplash-1536x1152.jpg"
+            src={d.img5}
               alt=""
               className="latestArtImg2"
             />
           </div>
           <div>
-            <h2>Catch waves with an adventure guide</h2>
+            <h2>{d.title5}</h2>
             <p className="LatestArtDetail">
-              Gujarat is vastly underrated and it’s a mystery to us why the
-              region isn’t more well-
+            {d.Overview5}
             </p>
             <p className="LatestArtDate">
               <span className="genericDateTravel">Travel</span>
@@ -96,16 +152,15 @@ function HollyArticleList() {
         <div className="LatestArtBlock">
           <div>
             <img
-              src=" https://cdn.uniacco.com/blog/wp-content/uploads/2021/01/22153121/shanna-beasley-C6o32dvMvc8-unsplash-1536x1152.jpg"
+            src={d.img6}
               alt=""
               className="latestArtImg2"
             />
           </div>
           <div>
-            <h2>Catch waves with an adventure guide</h2>
+            <h2>{d.title6}</h2>
             <p className="LatestArtDetail">
-              Gujarat is vastly underrated and it’s a mystery to us why the
-              region isn’t more well-
+            {d.Overview6}
             </p>
             <p className="LatestArtDate">
               <span className="genericDateTravel">Travel</span>
@@ -122,16 +177,15 @@ function HollyArticleList() {
         <div className="LatestArtBlock">
           <div>
             <img
-              src=" https://cdn.uniacco.com/blog/wp-content/uploads/2021/01/22153121/shanna-beasley-C6o32dvMvc8-unsplash-1536x1152.jpg"
+            src={d.img7}
               alt=""
               className="latestArtImg2"
             />
           </div>
           <div>
-            <h2>Catch waves with an adventure guide</h2>
+            <h2>{d.title7}</h2>
             <p className="LatestArtDetail">
-              Gujarat is vastly underrated and it’s a mystery to us why the
-              region isn’t more well-
+            {d.Overview7}
             </p>
             <p className="LatestArtDate">
               <span className="genericDateTravel">Travel</span>
@@ -139,60 +193,14 @@ function HollyArticleList() {
             </p>
           </div>
         </div>
+        </div>
+        
+        ))
+}
 
-        <div className="spacer">
-          <hr className="commonHr" />
+
         </div>
 
-
-        <div className="LatestArtBlock">
-          <div>
-            <img
-              src=" https://cdn.uniacco.com/blog/wp-content/uploads/2021/01/22153121/shanna-beasley-C6o32dvMvc8-unsplash-1536x1152.jpg"
-              alt=""
-              className="latestArtImg2"
-            />
-          </div>
-          <div>
-            <h2>Catch waves with an adventure guide</h2>
-            <p className="LatestArtDetail">
-              Gujarat is vastly underrated and it’s a mystery to us why the
-              region isn’t more well-
-            </p>
-            <p className="LatestArtDate">
-              <span className="genericDateTravel">Travel</span>
-              <DateExt dateExt=" / August 21 2017" />
-            </p>
-          </div>
-        </div>
-
-        <div className="spacer">
-          <hr className="commonHr" />
-        </div>
-
-
-        <div className="LatestArtBlock">
-          <div>
-            <img
-              src=" https://cdn.uniacco.com/blog/wp-content/uploads/2021/01/22153121/shanna-beasley-C6o32dvMvc8-unsplash-1536x1152.jpg"
-              alt=""
-              className="latestArtImg2"
-            />
-          </div>
-          <div>
-            <h2>Catch waves with an adventure guide</h2>
-            <p className="LatestArtDetail">
-              Gujarat is vastly underrated and it’s a mystery to us why the
-              region isn’t more well-
-            </p>
-            <p className="LatestArtDate">
-              <span className="genericDateTravel">Travel</span>
-              <DateExt dateExt=" / August 21 2017" />
-            </p>
-          </div>
-        </div>
-
-        </div>
     </div>
   )
 }
