@@ -16,38 +16,42 @@ function HollyArticleList() {
 <div className='ArticleListSpace'  >
 
 {
-        data.filter((item)=>item.cat==="Hollywood" 
-        ).map((d,index)=>(
+        data.filter((item)=>item.cat==="Hollywood" && item.for==="ArticleList"
+        ).map((d, index)=>(
 
-<div key={index}>
+<div key={d.id}>
      <div className="LatestArtBlock">
           <div >
             
             <img
-              src={d.img1}
+              src={d.img}
               alt=""
               className="latestArtImg2"
             />
           </div>
           <div>
-            <h2>{d.title1}</h2>
+            <h2>{d.title}</h2>
             <p className="LatestArtDetail">
-            {d.Overview1}
+            {d.Overview}
             </p>
             <p className="LatestArtDate">
-              <span className="genericDateTravel">Travel</span>
-              <DateExt dateExt=" / August 21 2017" />
+              <span className="genericDateTravel">{d.cat}</span>
+              <DateExt dateExt={`  / ${d.date} `} />
             </p>
           </div>
         </div>
+       
 
-
+        {index !== data.length - 1 && (
         <div className="spacer">
           <hr className="commonHr" />
         </div>
+        )
+        }
+  
 
 
-        <div className="LatestArtBlock">
+        {/* <div className="LatestArtBlock">
           <div>
             <img
             src={d.img2}
@@ -192,8 +196,8 @@ function HollyArticleList() {
               <DateExt dateExt=" / August 21 2017" />
             </p>
           </div>
-        </div>
-        </div>
+        </div>*/}
+        </div> 
         
         ))
 }

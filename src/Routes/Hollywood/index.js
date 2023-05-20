@@ -1,7 +1,7 @@
 import React from 'react'
 import { Logo, TopNavigation } from '../../Components'
 import HollyArticleList from './HollyArticleList'
-import TechTopPost from './HollyTopPost'
+import HollyTopPost from './HollyTopPost'
 import Store from '../../Utility/ContextStore/contextAPI'
 
 const Hollywood = () => {
@@ -14,7 +14,7 @@ const Hollywood = () => {
         <div className="subContainer">
           <div className="BollywoodContainer">
     <HollyArticleList/>
-    <TechTopPost/>
+    <HollyTopPost/>
     </div>
     </div>
     </div>
