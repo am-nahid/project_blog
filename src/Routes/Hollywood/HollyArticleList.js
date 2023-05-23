@@ -2,11 +2,23 @@ import React, {useContext} from 'react'
 import { Header, DateExt } from '../../Components'
 import '../../App.css'
 import { AppData } from '../../Utility'
+import { useNavigate } from 'react-router-dom';
 
 function HollyArticleList() {
 
   const [data] =useContext(AppData)
+
   // console.log(data);
+  // const params = useParams();  
+  const navi = useNavigate(); 
+
+    // const location = useLocation();  
+const handleImage=(d)=>{
+  // console.log('works', params);
+ navi(`/Hollywood/${d.id}`, {state: d})
+
+}
+
   return (
     <div className='ArticleList'>
       <div className='ArticleListHead'>
@@ -24,6 +36,7 @@ function HollyArticleList() {
           <div >
             
             <img
+            onClick={( )=> handleImage(d)}
               src={d.img}
               alt=""
               className="latestArtImg2"
@@ -42,7 +55,7 @@ function HollyArticleList() {
         </div>
        
 
-        {index !== data.length - 1 && (
+        {index !== 6 && (
         <div className="spacer">
           <hr className="commonHr" />
         </div>

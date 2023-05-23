@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Header, DateExt } from '../../Components'
 import '../../App.css'
+import { AppData } from '../../Utility'
+import { useNavigate } from 'react-router-dom';
 
 function FitArticleList() {
+  const [data]= useContext(AppData)
+
+  const navi = useNavigate(); 
+
+  const handleImage=(d)=>{
+   navi(`/Fitness/${d.id}`, {state: d})
+  //  console.log(d);
+  }
+  // console.log(data);
   return (
     <div className='ArticleList'>
       <div className='ArticleListHead'>
@@ -11,7 +22,44 @@ function FitArticleList() {
 
 
 <div className='ArticleListSpace'>
-     <div className="LatestArtBlock">
+
+  
+{
+        data.filter((item)=>item.cat==="Fitness" && item.for==="ArticleList"
+        ).map((d, index)=>(
+          <div key={d.id}>
+     <div className="LatestArtBlock" >
+          <div >
+            <img
+             onClick={( )=> handleImage(d)}
+              src={d.img}
+              alt=""
+              className="latestArtImg2"
+            />
+          </div>
+          <div>
+            <h2>{d.title}</h2>
+            <p className="LatestArtDetail">
+            {d.Overview}
+            </p>
+            <p className="LatestArtDate">
+              <span className="genericDateTravel">{d.cat}</span>
+              <DateExt dateExt={`  / ${d.date} `} />
+            </p>
+          </div>
+        </div>
+        {index !== 6 && (
+         <div className="spacer">
+         <hr className="commonHr" />
+       </div>
+        )}
+       </div>
+  ))
+}
+
+
+
+     {/* <div className="LatestArtBlock">
           <div>
             <img
               src=" https://cdn.uniacco.com/blog/wp-content/uploads/2021/01/22153121/shanna-beasley-C6o32dvMvc8-unsplash-1536x1152.jpg"
@@ -186,7 +234,7 @@ function FitArticleList() {
               <DateExt dateExt=" / August 21 2017" />
             </p>
           </div>
-        </div>
+        </div> */}
 
         </div>
     </div>
