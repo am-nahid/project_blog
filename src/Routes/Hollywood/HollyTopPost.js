@@ -2,10 +2,19 @@ import React, {useContext} from 'react'
 import { Header, DateExt, Advertisement } from '../../Components'
 import '../../App.css'
 import { AppData } from '../../Utility'
+import { useNavigate } from 'react-router-dom';
 
 
 function HollyTopPost() {
   const [data] =useContext(AppData)
+
+ 
+  const navi = useNavigate();
+ 
+const handleImage=(d)=>{
+ navi(`/Hollywood/${d.id}`, {state: d})
+
+}
  
 
    const Filter = data.filter((item)=> item.cat==="Hollywood" && item.for==="TopList")
@@ -26,7 +35,7 @@ function HollyTopPost() {
 
   
           <div key={d.id}>
-          <img src={d.img} alt='' className='topPostImg' />
+          <img   onClick={( )=> handleImage(d)} src={d.img} alt='' className='topPostImg' />
            <h2 className='h2Height'>{d.title}</h2>
            <p className='paraHeight'>
                     <span className="genericDateTravel">{d.cat}</span>
@@ -45,7 +54,7 @@ function HollyTopPost() {
           </div>
 
           <div className='TopPostsSmallCon'>
-          <img src={d.img} alt='' className='topPostImgSmall' />
+          <img   onClick={( )=> handleImage(d)} src={d.img} alt='' className='topPostImgSmall' />
            <div className='h4'>
            <h4 className='h3Height'>{d.title}</h4>
            <p className='paraHeightSmall'>
