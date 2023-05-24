@@ -1,5 +1,5 @@
 import React from 'react'
-import { Logo, TopNavigation } from '../../Components'
+import { Logo, TopNavigation , LogoMobile} from '../../Components'
 import HollyArticleList from './HollyArticleList'
 import HollyTopPost from './HollyTopPost'
 import Store from '../../Utility/ContextStore/contextAPI'
@@ -7,8 +7,9 @@ import Store from '../../Utility/ContextStore/contextAPI'
 const Hollywood = () => {
   return (
     <>
-    <Logo/>
-    <TopNavigation/>
+    <div className='LMobile' ><LogoMobile/></div>
+    <div className='LLocal' ><Logo/>
+      <TopNavigation/></div>
     <Store>
     <div className="mainContainer">
         <div className="subContainer">

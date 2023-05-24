@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Logo, TopNavigation } from "../../Components";
+import { Logo, TopNavigation , LogoMobile} from "../../Components";
 import Banner from "./Banner";
 import Latest from "./Latest";
 import LatestArticle from "./LatestArticle";
@@ -15,81 +15,24 @@ const Home = () => {
 
   return (
     <>
-      <Logo />
-      <TopNavigation />
+    <div className='LMobile' ><LogoMobile/></div>
+    <div className='LLocal' ><Logo/>
+      <TopNavigation/></div>
       <Store>
-      <Banner />
-      <Latest />
-      <div className="mainContainer">
-        <div className="subContainer">
-          <div className="homeContainer">
-            
-            <LatestArticle />
-            
-           
-            <TopPots/>
-           
-          
+        <Banner />
+        <Latest />
+        <div className="mainContainer">
+          <div className="subContainer">
+            <div className="homeContainer">
+              <LatestArticle />
+
+              <TopPots />
+            </div>
           </div>
         </div>
-      </div>
-    
-    
-        </Store> 
+      </Store>
     </>
   );
 };
 
 export default Home;
-
-// // Routes/Home/index.js
-// import React, { useContext } from 'react';
-// import { Logo, TopNavigation } from '../../Components';
-// import Banner from './Banner';
-// import Latest from './Latest';
-// import LatestArticle from './LatestArticle';
-// import { AppData } from '../../Components/Data';
-
-// const Home = () => {
-//   const [data] = useContext(AppData);
-
-//   return (
-//     <>
-//       <Logo />
-//       <TopNavigation />
-//       <Banner />
-//       <Latest />
-//       <LatestArticle />
-//       <div>
-//         {data
-//           .filter((item) => item.cat === 'Home')
-//           .map((d) => (
-//             <div key={d.id}>
-//               <h1>{d.cat}</h1>
-//               <img className="imgSizeOne" alt="" src={d.img} />
-//             </div>
-//           ))}
-//       </div>
-//     </>
-//   );
-// };
-
-// export default Home;
-
-// const Home = () => {
-//     return (
-//       <AppData.Consumer>
-//         {(data) => (
-//           <>
-//             <Logo />
-//             <TopNavigation />
-//             <Banner />
-//             <Latest />
-//             <LatestArticle data={data} />
-//           </>
-//         )}
-//       </AppData.Consumer>
-//     );
-//   };
-
-//   export default Home;

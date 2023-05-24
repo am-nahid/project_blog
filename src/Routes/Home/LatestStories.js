@@ -20,14 +20,4 @@ export default LatestStories
 
 
 
-// {
-//   state.filter((item)=>item.cat==="Latest Articles").map((d)=>{
-//     return(
-//       <div key={d.id}>
-//         <h1>{d.title}</h1>
-//         <img src={d.img} alt=''/>
-//       </div>
-//     )
-//   })
-// }
 
