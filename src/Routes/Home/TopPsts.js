@@ -27,13 +27,14 @@ function TopPots() {
         {
             data.filter((item)=>item.sp==="home-Toplist"
             ).map((d, index)=>(
-        <div key={d.id}>
-        <img onClick={()=>handleImage(d)}  alt='' className='topPostImg' src={d.img}/>
-         <h2 className='h2Height'>{d.title}</h2>
+        <div className='topPostMedia' key={d.id}>
+        <img onClick={()=>handleImage(d)}  alt='No Network' className='topPostImg hov' src={d.img}/>
+        <div className='topTextMedia'><h2   onClick={( )=> handleImage(d)} className='h2Height'>{d.title}</h2>
          <p className='paraHeight'>
                   <span className="genericDateTravel">{d.cat}</span>
                   <DateExt dateExt={`  / ${d.date} `} />
                 </p>
+                </div>
                 </div>
   ))
         }
@@ -47,9 +48,9 @@ function TopPots() {
           <hr className="commonHr" />
         </div>
         <div className='TopPostsSmallCon'>
-        <img onClick={()=>handleImage(d)}  alt='' className='topPostImgSmall' src={d.img}/>
+        <img onClick={()=>handleImage(d)}  alt='No Network' className='topPostImgSmall hov' src={d.img}/>
          <div className='h4'>
-         <h4 className='h3Height'>{d.title}</h4>
+         <h4   onClick={( )=> handleImage(d)} className='h3Height'>{d.title}</h4>
          <p className='paraHeightSmall'>
                   <span className="genericDateTravel">{d.cat}</span>
                   <DateExt dateExt={`  / ${d.date} `} />
@@ -62,35 +63,6 @@ function TopPots() {
                 ))
 }
 
-        {/* <div className="spacer">
-          <hr className="commonHr" />
-        </div>
-        <div className='TopPostsSmallCon'>
-        <img alt='' className='topPostImgSmall' src='https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/2/aerial-view-of-banff-national-park-mark-newman.jpg?&targetx=-43&targety=0&imagewidth=786&imageheight=499&modelwidth=700&modelheight=500&backgroundcolor=09141B&orientation=0'/>
-         <div className='h4'>
-         <h4 className='h3Height'>Catch waves with an adventure guide</h4>
-         <p className='paraHeightSmall'>
-                  <span className="genericDateTravel">Travel</span>
-                  <DateExt dateExt=" / August 21 2017" />
-                </p>
-                </div>
-              
-        </div>
-
-        <div className="spacer">
-          <hr className="commonHr" />
-        </div>
-        <div className='TopPostsSmallCon'>
-        <img alt='' className='topPostImgSmall' src='https://render.fineartamerica.com/images/rendered/default/greeting-card/images/artworkimages/medium/2/aerial-view-of-banff-national-park-mark-newman.jpg?&targetx=-43&targety=0&imagewidth=786&imageheight=499&modelwidth=700&modelheight=500&backgroundcolor=09141B&orientation=0'/>
-         <div className='h4'>
-         <h4 className='h3Height'>Catch waves with an adventure guide</h4>
-         <p className='paraHeightSmall'>
-                  <span className="genericDateTravel">Travel</span>
-                  <DateExt dateExt=" / August 21 2017" />
-                </p>
-                </div>
-              
-        </div> */}
 
     </div>
     </div>

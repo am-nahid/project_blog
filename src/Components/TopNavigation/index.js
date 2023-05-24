@@ -1,15 +1,9 @@
 import React from 'react'
 import '../../App.css'
 import { Link } from 'react-router-dom'
-import { useNavigate,useLocation } from 'react-router-dom'
+
 
 function TopNavigation() {
-  // const navi= useNavigate();
-  // const local = useLocation()
-  // const handleNav =()=>{
-  //   console.log('hollywood', local);
-  //   navi('/hollywood')
-  // }
 
   
   return (

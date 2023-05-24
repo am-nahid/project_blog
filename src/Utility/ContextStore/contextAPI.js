@@ -5,70 +5,7 @@ export const AppData = createContext();
 function Store(props) {
   const [data, setdata] = useState([
     
-    // {
-    //   id: 5,
-    //   cat: "Hollywood",
-    //   Overview1:
-    //     "Ant-Man and the Wasp find themselves exploring the Quantum Realm, interacting with strange new creatures and embarking on an adventure that pushes them beyond the limits of what they thought was possible.",
-
-    //   img1: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/A7SobaUTvb6d5Z3dpOhFxPG0RQf.jpg",
-
-    //   title1: "Ant-Man and the Wasp: Quantumania",
-
-    //   deccibe1:
-    //     "When it comes to their Marvel properties, there’s this slightly morbid insistence by Disney to tie every teeny tiny detail of previous movies, television shows, and character arcs together in obsessive fashion. It’s becoming such an uncontrollable urge by the studio to engage in this behavior that the cause-and-effect is resulting in disasters like “Eternals,” “Thor: Love and Thunder,” and now, “Ant-Man and the Wasp: Quantumania.”    Trying too hard to force a non-story into the already lame Ant-Man mythology, the film reunites superhero partners Scott Lang (Paul Rudd) and Hope Van Dyne (Evangeline Lilly) as Ant-Man and the Wasp. The pair find themselves thrust into the dangerous Quantum Realm along with Hope’s parents Hank Pym (Michael Douglas) and Janet Van Dyne (Michelle Pfeiffer), along with Scott’s teenage daughter, Cassie (Kathryn Newton). As they explore the unusual terrain and alien society filled with strange creatures, Janet reveals that she didn’t quite tell the group everything about the three decades she spent trapped in the realm. Facing new dangers from supervillan Kang the Conquerer (Jonathan Majors), the family must unite to stop a worldwide disaster.",
-
-    //   title2: "John Wick: Chapter 4",
-      
-    //   img2: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
-    //   Overview2:
-    //     "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
-
-    //   img3: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/cvsXj3I9Q2iyyIo95AecSd1tad7.jpg",
-    //   title3: "Creed III",
-    //   Overview3:
-    //     "After dominating the boxing world, Adonis Creed has been thriving in both his career and family life. When a childhood friend and former boxing prodigy, Damian Anderson, resurfaces after serving a long sentence in prison, he is eager to prove that he deserves his shot in the ring. ",
-
-    //   img4: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/r2J02Z2OpNTctfOSN1Ydgii51I3.jpg",
-    //   title4: "Guardians of the Galaxy Vol. 3",
-    //   Overview4:
-    //     "Peter Quill, still reeling from the loss of Gamora, must rally his team around him to defend the universe along with protecting one of their own. A mission that, if not completed successfully, could quite possibly lead to the end of the Guardians as we know them.",
-
-    //   img5: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/liLN69YgoovHVgmlHJ876PKi5Yi.jpg",
-    //   title5: "Ghosted",
-    //   Overview5:
-    //     "Salt-of-the-earth Cole falls head over heels for enigmatic Sadie — but then makes the shocking discovery that she’s a secret agent. Before they can decide on a second date, Cole and Sadie are swept away on an international adventure to save the world.",
-
-    //   img6: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
-    //   title6: "Avatar: The Way of Water",
-    //   Overview6:
-    //     "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
-
-    //   img7: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/A3ZbZsmsvNGdprRi2lKgGEeVLEH.jpg",
-    //   title7: "Shazam! Fury of the Gods",
-    //   Overview7:
-    //     'Billy Batson and his foster siblings, who transform into superheroes by saying "Shazam!", are forced to get back into action and fight the Daughters of Atlas, who they must stop from using a weapon that could destroy the world.',
-    // },
-    // {
-    //   id: 6,
-    //   cat: "",
-    //   Overview2:
-    //     "With the price on his head ever increasing, John Wick uncovers a path to defeating The High Table. But before he can earn his freedom, Wick must face off against a new enemy with powerful alliances across the globe and forces that turn old friends into foes.",
-    //   img2: "https://www.themoviedb.org/t/p/w300_and_h450_bestv2/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg",
-    //   title2: "John Wick: Chapter 4",
-    // },
-    // { id: 7, cat: "Bollywood", img: "", title: "" },
-    // { id: 8, cat: "Bollywood", img: "", title: "" },
-    // { id: 9, cat: "Bollywood", img: "", title: "" },
-    // { id: 10, cat: "Bollywood", img: "", title: "" },
-    // { id: 11, cat: "Bollywood", img: "", title: "" },
-    // { id: 12, cat: "", img: "", title: "" },
-    // { id: 13, cat: "", img: "", title: "" },
-    // { id: 14, cat: "", img: "", title: "" },
-    // { id: 15, cat: "", img: "", title: "" },
-    // { id: 16, cat: "", img: "", title: "" },
-    // { id: 17, cat: "", img: "", title: "" },
-
+    
     {id:1, 
       ide: 1,
       cat: "Hollywood",
@@ -204,7 +141,7 @@ function Store(props) {
       for: "ArticleList",
       sp:"home-latestArt",
       date:' 25 January, 2023',
-      img: 'https://stat4.bollywoodhungama.in/wp-content/uploads/2020/08/Pathaan-10-1-306x393.jpg',
+      img: 'https://www.bollywoodhungama.com/wp-content/uploads/2023/01/1024x768.jpg',
       title:'Pathaan',
       Overview: "Pathaan Movie is the story of a passionate agent working for the country. In 2019, after the government of India revoked Article 370, an enraged Pakistan general Qadir (Manish Wadhwa) decides to take revenge. He signs a contract with Jim (John Abraham), a dreaded terrorist who has an extreme enmity towards India.",
       description: " URI: THE SURGICAL STRIKE is based on the true events of the surgical strike carried out by the Indian armed forces following the September 2016 Uri attacks, which was termed as one of the deadliest attacks on the Indian forces. The film opens depicting Indian soldiers being ambushed in Manipur, followed by retaliation by the forces on terror bases across the India - Myanmar border in the North East. From there, the story follows Major Vihaan Shergill (Vicky Kaushal), who seeks retirement owing to his mother's ill health as she suffers from Alzheimer’s disease. In the meantime, Pakistani terrorist outfits carry out an attack at Uri Army Base camp in Kashmir. Vihaan’s childhood friend and brother-in-law Captain Karan Kashyap (Mohit Raina) along with some other fellow army mates are martyred in this attack. Following this, Vihaan is forced back by emotions to extract revenge by leading the strike force. Vihaan puts together a team to conduct the surgical strike under the guidance of PMO bigwig Govind Bhardwaj (Paresh Rawal) with special orders from PM (Rajit Kapur) himself. Special Agent Pallavi (Yami Gautam) helps Vihaan to detect the location of the launch pads and details of the target. And what follows is the execution of the surgical strikes across PoK."
@@ -316,7 +253,7 @@ function Store(props) {
       cat: "Food",
       for: "ArticleList", 
        date:" MAY 15, 2023",
-      img: "https://pinchofyum.com/wp-content/uploads/Salmon-Tacos-Square-960x960.png",
+      img: "https://media.istockphoto.com/id/614313140/photo/soft-beef-tacos-with-fries.jpg?s=612x612&w=0&k=20&c=KxBKdcWFKWCQwLWiil-Rgvlpl9l8SZXwkvjnCiWcia8=",
       title: "Salmon Tacos with Mango Corn Salsa",
       Overview:"Super easy salmon tacos loaded with a mango, sweet corn, and cucumber salsa!",
       description: "These tacos are THE dinner for me right now! \n\n A few nights ago, I made them (again), and I set the sheet pan of salmon down on the table and my whole family literally descended upon it and started grabbing at the salmon with their hands and forks as I stood by watching in half shock, half pride. It was a feeding frenzy. \n\n Of course, we love salmon. It’s a great source of nutrition and protein and, when cooked well, it gently slides apart into buttery, juicy, delightful little flakes.\n\n But I’m not going to lie to you: the main event here is that mango corn salsa. \n\n The salmon itself is completely SOS (taco seasoning and THAT’S IT), which is why I think it makes sense to put all your effort and energy into the salsa. This salsa is also the thing that’s going to keep you sitting at the table long after you’re done eating tacos, just scooping some extra salsa bites all on its own and suddenly thinking of it as more of a salad? It can be a salad, right? I would totally eat this salsa on its own as a salad. \n\n Each bite is extra crispy and unexpected from the raw sweet corn and cucumber with a little burst of juicy flavor. But it’s also mainstream enough with the mango that my two young kids are usually happy to devour it right along with us. \n\n I love a million sauces on my tacos (okay, fine, on every recipe). But with this one, all it needs is a bit of extra lime and honey to finish it off. Simple, minimal effort, max deliciousness."
@@ -329,7 +266,7 @@ function Store(props) {
       for: "ArticleList", 
        date:"MAY 8, 2023 ",
        sp: "home-latest",
-      img: "https://pinchofyum.com/wp-content/uploads/Chili-Garlic-Pappardelle-Square-960x960.png",
+      img: "https://c4.wallpaperflare.com/wallpaper/1016/528/45/cuisine-food-india-indian-wallpaper-preview.jpg",
       title: "Chili Garlic Pappardelle with Smashed Broccoli and Soft Eggs",
       Overview:"Slippery, spicy, bossy noodles with a minimal-ingredient sauce, topped with a pile of roasty smashed broccoli and a perfectly messy soft egg. Yes, please.",
       description: "Oh man, these slippery, spicy noodles are a TREAT. Silky, rich, full of deep flavor and a flash of heat! \n\n I would say this recipe belongs less in the “normal family dinner” category and more in the “hangry / hardcore craving / last minute meal” category.\n\nThe big flavors end up being a bit much for my kids, so I make this for a need-it-right-now hungry mom moment that calls for something ultra-satisfying, silky, and spicy. I often end up eating it right over the stove in a moment of pure and absolute joy. \n\nAnd luckily, the components can work for everybody (buttered noodles is always a kid win, plus eggs and broccoli!), so it can be easily worked into something family-friendly or meal-prep friendly if you batch some extra broccoli and eggs to throw into other meals throughout the week. SOS at its finest. \n\n The miso just does something magical to this whole thing – if you don’t have it I think you’ll still end up just fine. But if you have it (hopefully I already convinced you to buy some with the Miso Crunch Salad!) it will elevate the flavor and add a depth that’s just really amazing for such a fast and easy recipe."
@@ -354,7 +291,7 @@ function Store(props) {
       cat: "Food",
       for: "ArticleList", 
        date:"APRIL 25, 2023 ",
-      img: "https://pinchofyum.com/wp-content/uploads/May-2023-Meal-Plans-01-1200x1200.png",
+      img: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Nnx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80",
       title: "Join Us for Three Weeks of Meal Plans",
       Overview:"Three weeks, three meal plans, everything you need to make getting dinner on the table each night easy, doable, and delicious. Join us!",
       description: "Ahhhhh, summer. We love to love it and also how are there this many end-of-school projects and assemblies and how am I supposed to rush to one more dance class and why do I feel like I want to do anything else besides cook when it’s this nice out. "
@@ -452,8 +389,8 @@ function Store(props) {
       ide:1,
       cat: "Fitness",
       for: "ArticleList", 
-       date:" ",
-      img: "https://assets.precisionnutrition.com/2023/02/Sports-Nutrition-fb-768x403.jpeg",
+       date:"25/05/23  ",
+      img: "https://media.istockphoto.com/id/1299421209/photo/diet-and-exercise-for-weight-loss.jpg?b=1&s=170667a&w=0&k=20&c=OilzXOdxnV_MeN5V9Q-Y5TvmhU2F8nNNXazNsfpqgiw=",
       title: "The Ultimate Sports Nutrition ",
       Overview:"Learn the basics of sports nutrition and get your sport-specific nutrition guide to optimize athletic performance.",
       description: " More the just eating well, sports nutrition is a strategic way of eating that optimizes your athletic performance. It ensures your calorie, protein, carbohydrate, fat, vitamin, mineral, and fluid intake will meet the demands of your sport, the unique needs of your body, and your individual goals. \n\n All so you can train your hardest, perform your best, and unlock your full potential as an athlete.\n\n In this article, we’ll give you the essential sports nutrition strategies for peak performance, backed by scientific recommendations and practical advice."
@@ -463,7 +400,7 @@ function Store(props) {
       ide:2,
       cat: "Fitness",
       for: "ArticleList", 
-       date:" ",
+       date:" 25/05/23 ",
       img: "https://assets.precisionnutrition.com/2023/02/motivational-interviewing-fb-768x403.jpg",
       title: "Motivational Interviewing:",
       Overview:"Motivational Interviewing: The proven coaching method that helps people change—even when they’re feeling stuck",
@@ -476,8 +413,8 @@ function Store(props) {
       cat: "Fitness",
       sp: "home-latest",
       for: "ArticleList", 
-       date:" ",
-      img: "https://assets.precisionnutrition.com/2023/01/deep-health-guide-fb-768x403.jpg",
+       date:"25/05/23  ",
+      img: "https://media.istockphoto.com/id/1462659268/photo/portrait-of-man-breathing-in-nature-and-with-open-arms.webp?b=1&s=170667a&w=0&k=20&c=Ys5qMk23I56iYVrbnd940QN9kwDlUqm2HmeX8AYDMZ4=",
       title: "The Deep Health Assessment:",
       Overview:"Good health isn’t just about your cholesterol levels, body composition, and fitness level. Here’s a deeper look.",
       description: " When most people hear that question, they immediately think about their blood work or maybe a nagging problem, like back pain or heartburn or migraines. \n\n Others might focus on a fitness achievement: “Just completed my third marathon this year. Never been healthier!” \n\nMany people simply consider their weight or overall appearance: \n\n [pinches stomach] “I’m still using the same belt hole I used in my twenties, so I must be healthy, right?”"
@@ -487,8 +424,8 @@ function Store(props) {
       ide:4,
       cat: "Fitness",
       for: "ArticleList", 
-       date:" ",
-      img: "https://assets.precisionnutrition.com/2020/08/Deep_Health_Graph_1200x630-768x403.png",
+       date:"25/05/23  ",
+      img: "https://c8.alamy.com/comp/2E1NCAA/six-characteristics-of-quality-care-2E1NCAA.jpg",
       title: "Deep Health -secret that transforms short-term fitness",
       Overview:"Losing 10 pounds. Running a half marathon. Getting six-pack abs. How do you turn short-term client goals into something meaningful, sustainable, and inspiring?",
    
@@ -499,8 +436,8 @@ function Store(props) {
       cat: "Fitness",
       for: "ArticleList", 
       sp:"home-latestArt",
-       date:" ",
-      img: "https://assets.precisionnutrition.com/2021/09/body-fat-calc-fb-feat-768x403.png",
+       date:"25/05/23  ",
+      img: "https://media.istockphoto.com/id/500874808/photo/lose-weight-concept-with-person-on-a-scale-measuring-kilograms.webp?b=1&s=170667a&w=0&k=20&c=HE_kBCOHR24_IicaEsutI2cZvTIxo7yMTRzFFw4w7RY=",
       title: "Body Fat Calculator & Body Fat Percentage Calculator",
       Overview:"Find out your body percentage and how it affects your health.",
       description: "Want to know your body fat percentage? This free body fat calculator estimates it instantly, using three scientifically validated formulas.\n\n But that’s just for starters: Our body fat calculator does way more than spit out numbers.\n\n In addition to getting your body fat percentage estimate, you’ll also receive a FREE report that’ll help you understand what your results REALLY mean—and what you should do next to reach your health and fitness goals. "
@@ -510,7 +447,7 @@ function Store(props) {
       ide:6,
       cat: "Fitness",
       for: "ArticleList", 
-       date:" ",
+       date:" 25/05/23 ",
       img: "https://assets.precisionnutrition.com/2023/01/blood-sugar-chart-1200-630-1-768x403.jpg",
       title: "Use continuous glucose monitors (CGMs)",
       Overview:"Just because you can track your blood sugar levels doesn’t mean you…",
@@ -521,8 +458,8 @@ function Store(props) {
       ide:7,
       cat: "Fitness",
       for: "ArticleList", 
-       date:" ",
-      img: "https://assets.precisionnutrition.com/2023/01/new-years-resolutions-fb-768x403.jpg",
+       date:" 25/05/23 ",
+      img: "https://images.unsplash.com/photo-1551632811-561732d1e306?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aGlraW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60",
       title: "Fresh Start Effect",
       Overview:"Give your clients a jumpstart on their goals, any time of the year.",
       description: "Suppose you set a New Year’s resolution to start running. \n\n In your mind, your “old self” (the one glued to the couch) expires December 31. Your new self (the one who runs!) begins January 1.\n\n Because your brain distinguishes between these two selves, it’s much easier to believe that your “new self” will succeed.\n\n That might sound silly: After all, you won’t actually magically transform the moment the ball drops on New Year’s Eve or a new calendar day dawns.\n\n  But human psychology is a funny thing, and this separation of self enables us to release ourselves from our past “failures,” and believe that a different way forward is possible.\n\n That belief is critical for behavior change.\n\n “When we believe we can get better at something, we develop self-efficacy,” says Dr. Nordin. “Self-efficacy leads to increased motivation, enabling us to tackle the challenges in front of us, which ultimately leads to behavior change.” "
@@ -534,9 +471,9 @@ function Store(props) {
       cat: "Fitness",
       for: "TheTopList", 
       sp: "home-ToplistA",
-       date:" ",
-      img: "https://assets.precisionnutrition.com/2022/11/stress-questions-fb-768x403.jpg",
-      title: "common stress-related questions",
+       date:"25/05/23 ",
+      img: "https://images.pexels.com/photos/4098228/pexels-photo-4098228.jpeg?auto=compress&cs=tinysrgb&w=600",
+      title: "Common stress-related questions",
       Overview:"These are the challenges most likely to plague your clients—and maybe you, too. Here’s a round-up of sage advice.",
       description: "The relationship between stress and health has gained a lot more attention and validity in the past 30 years.\n\n As a result, you’ve likely learned to associate stress with all kinds of terrible things: heart attacks, hair loss, early death.\n\n And while excessive, unrelenting stress definitely erodes health, let’s clear something up:\n\n Not all stress is bad.\n\n In fact, in order to thrive, we actually need some stress to feel juicy, purposeful, and alive. "
     },
@@ -556,7 +493,7 @@ function Store(props) {
       ide:10,
       cat: "Fitness",
       for: "TopList", 
-       date:" ",
+       date:"25/05/23  ",
       img: "https://assets.precisionnutrition.com/2022/10/what-is-a-wellness-coach-fb-768x403.jpg",
       title: "Wellness coaching",
       Overview:"Make time for sweating, meditating, time in nature—whatever helps you feel recharged and strong.",
@@ -568,7 +505,7 @@ function Store(props) {
       ide:11,
       cat: "Fitness",
       for: "TopList", 
-       date:"",
+       date:"25/05/23 ",
       img: "https://assets.precisionnutrition.com/2022/07/TWITTER-lose-weight-id1325862997-768x384.jpg",
       title: "Lose 50, 75, 100+ pounds ",
       Overview:"Use these mindset strategies to get through the grind—and finally meet your best-feeling body.",
@@ -605,8 +542,8 @@ function Store(props) {
       cat: "Technology",
       for: "ArticleList", 
       sp:"home-latestArt",
-       date:"BY LISA EADICICCO ",
-      img: "https://www.cnet.com/a/img/resize/5701726459fe6221144ff76231210d3fed0f30d9/hub/2022/11/07/2c677602-0215-4228-9f2a-b00c8b0c8eed/vpn-blue-blue-blue-too.jpg?auto=webp&fit=crop&height=173&width=308",
+       date:"BY LISA ",
+      img: "https://media.gettyimages.com/id/1182014860/photo/secure-network-concept.jpg?s=2048x2048&w=gi&k=20&c=0Qnso4fCj4VQJBMymNfWuyvsUcQt4sN7yKUYx3GZ7D8=",
       title: "Best VPN Deals: Get Top VPNs Starting at Less Than $2 a Month",
       Overview:"With these discounts, you can get a top VPN like ExpressVPN, Surfshark or NordVPN at a great rate.",
       description: "With cybercrime rates on the rise, it's more important than ever to protect yourself online. You should always exercise caution when opening links and visiting unvetted websites, but for true security, you'll want to use a VPN, or virtual private network. A VPN creates an encrypted connection between your devices and the internet, which allows you to browse securely and keep your sensitive data away from prying eyes. We've tested out and rounded up some of the the best VPNs available in 2023, and now we've short-listed some of the best offers you can get right now to help you sign up with a VPN service at a low price. \n\n There are many good reasons to use a virtual private network. For example, did you know your internet service provider amasses as much data as possible on your digital activity? A 2021 Federal Trade Commission report noted that the leading ISPs have gathered user data on topics as personal as race, sexual orientation and real-time location. They've combined it, cross-referenced it and shared it with third-party partners. Yikes."
@@ -616,7 +553,7 @@ function Store(props) {
       ide:4,
       cat: "Technology",
       for: "ArticleList", 
-       date:"BY LISA EADICICCO ",
+       date:"BY LISA ",
       img: "https://www.cnet.com/a/img/resize/667b3a76dd0865b1a63a5fb2efdc3eff4bb2b04c/hub/2023/05/04/31dfdcf2-1ac3-4320-b40c-4c356300f06e/google-pixel-7a-phone-14.jpg?auto=webp&fit=crop&height=108&width=196",
       title: "The Pixel 7A Raises the Bar for the Pixel 8",
       Overview:"Commentary: The Pixel 7A proves that Google needs to do more to separate its main Pixel phone from its more budget-friendly option.",
@@ -627,7 +564,7 @@ function Store(props) {
       ide:5,
       cat: "Technology",
       for: "ArticleList", 
-       date:" BY SCOTT STEIN",
+       date:" BY SCOTT ",
       img: "https://www.cnet.com/a/img/resize/abf6551eab5adc5cee46eb4102842de09f2d596f/hub/2023/05/17/5c9f2a28-c920-49fe-b508-98337d5033ed/spacetop-ar-laptop.jpg?auto=webp&fit=crop&height=228&width=416",
       title: "I Tried an AR Laptop. It's Way Ahead of Its Time",
       Overview:"The Spacetop is like a Chromebook for AR headsets. With Apple's hardware looming, it also feels like a reminder of how computers could change.",
@@ -639,7 +576,7 @@ function Store(props) {
       ide:6,
       cat: "Technology",
       for: "ArticleList", 
-       date:" BY DANIEL VAN BOOM",
+       date:" BY DANIEL",
       img: "https://www.cnet.com/a/img/resize/c6941fa2c5f29c26656aae025e3c60e8658e7135/hub/2023/05/17/73ccdc7b-7256-477c-bb15-34a7482d37b9/gettyimages-1225396175.jpg?auto=webp&fit=crop&height=108&width=196",
       title: "Hearing Loss Is on the Rise. A New Wave of Tech Might Help",
       Overview:"Hearing aids are getting cheaper and more accessible.",
@@ -650,7 +587,7 @@ function Store(props) {
       ide:7,
       cat: "Technology",
       for: "ArticleList", 
-       date:"BY MEARA ISENBERG",
+       date:"BY MEARA ",
       img: "https://www.cnet.com/a/img/resize/5b903e6df9dca4123983af81d6f86d5039e1ba22/hub/2023/05/18/e1f84082-50e8-47b1-8e9d-d7df6492dd56/untitled-design.png?auto=webp&fit=crop&height=228&width=416",
       title: "ChatGPT Comes to Your iPhone With OpenAI's New iOS App",
       Overview:"OpenAI says an Android app is coming 'soon.'",
@@ -661,7 +598,7 @@ function Store(props) {
       ide:8,
       cat: "Technology",
       for: "TopList", 
-       date:" BY LINDSAY BOYERS",
+       date:" BY LINDSAY ",
       img: "https://www.cnet.com/a/img/resize/8a3e82c2ee427cd4c9e6d850c7361d8be08b8fea/hub/2023/03/06/aa40eda8-8fed-429d-a9d9-96f1e9ed464c/red-coupon-1.png?auto=webp&fit=crop&height=173&width=308",
       title: "CNET's Free Shopping Extension Saves You Time and Money. Give It a Try Today",
       Overview:"No one likes to pay full price -- and that's what the CNET Shopping extension is here to help prevent.",
@@ -673,7 +610,7 @@ function Store(props) {
       cat: "Technology",
       for: "TheTopList", 
       sp: "home-ToplistA",
-       date:"BY EDWARD MOYER ",
+       date:"BY EDWARD  ",
       img: "https://www.cnet.com/a/img/resize/cd3fd545dc38f39ff36b8a840f45c663d83d0905/hub/2023/05/21/bfd630b0-ed26-4f6f-a96c-1a14f3d9dfd8/ai-brian-by-getty.jpg?auto=webp&fit=crop&height=228&width=416",
       title: "AI Draws Attention at G-7 Summit, With Leaders Calling for Guideline",
       Overview:"The leaders of the Group of Seven nations say we need to develop an international, framework to achieve the common vision and goal of trustworthy AI.",
@@ -684,7 +621,7 @@ function Store(props) {
       ide:10,
       cat: "Technology",
       for: "TopList", 
-       date:" BY JAMES BRICKNELL",
+       date:" BY JAMES ",
       img: "https://www.cnet.com/a/img/resize/7042b185e1526331c69c00332cd47d6aa456356a/hub/2023/05/11/65526df6-f863-45fa-95a0-4d05465a799e/google-io-2023-051023-66.jpg?auto=webp&fit=crop&height=362&width=644",
       title: "Google's AI Search Could Mean Radical Changes for Your Internet Experience",
       Overview:"At Google I/O, the company unveiled an experimental version of Search that integrates AI-generated responses. Will it break the balance of the internet?.",
@@ -695,7 +632,7 @@ function Store(props) {
       ide:11,
       cat: "Technology",
       for: "TopList", 
-       date:"BY SCOTT STEIN ",
+       date:"BY SCOTT ",
       img: "https://www.cnet.com/a/img/resize/08bdf2e50a92a72d0c091f914b295afb3e91809d/hub/2022/06/07/ef7b8ffd-9c0a-4afa-afef-2cea54ba4ace/apple-security-privacy-blue.jpg?auto=webp&fit=crop&height=362&width=644",
       title: "Download iOS 16.5 Right Now",
       Overview:"The update fixes a few security issues that might be actively exploited.",

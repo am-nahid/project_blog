@@ -15,6 +15,10 @@
     font-size: initial;
 }
 
+.LMobile{
+  display: none;
+}
+
 
 .Error404{
   text-align: center;
@@ -256,9 +260,21 @@ opacity: 0.24;
   }
 
   .bannerMainContent{
+    /* color: #908D8D;
+    padding-top: 1rem;
+    padding-bottom: 2rem; */
     color: #908D8D;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    /* line-height: 1.5em; */
+    height: 1.3em;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    /* width: 100%; */
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
   }
 
   .commonHr{
@@ -283,6 +299,31 @@ opacity: 0.24;
 
 .LatestArtDetail{
   padding-top: 15px;
+  line-height: 1.5em;
+  /* height: 3em; */
+  overflow: hidden;
+  /* white-space: nowrap; */
+  /* text-overflow: ellipsis; */
+  /* width: 100%; */
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+
+.TheH2{
+/* line-height: 1.5em; */
+    /* height: 3em; */
+    overflow: hidden;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    /* width: 100%; */
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.cHeight{
+  min-height: 12rem;
 }
 
 .latestArtImg2{
@@ -303,6 +344,12 @@ opacity: 0.24;
 
 .theLatestbox{
   box-shadow: 0px 5px 35px #00000008;
+  position: relative;
+}
+
+.endPara{
+  position: absolute;
+  bottom: 10px;
 }
 
 
@@ -349,6 +396,18 @@ width: 100%;
 .LatestArtImgCon{
   position: relative;
   padding-top: 3rem;
+}
+
+.h3Height{
+  line-height: 1.5em;
+    /* height: 3em; */
+    overflow: hidden;
+    /* white-space: nowrap; */
+    /* text-overflow: ellipsis; */
+    /* width: 100%; */
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
 }
 
 .Ad{
@@ -432,3 +491,220 @@ font-size: 12px;
   flex-direction: column;
   justify-content: space-between;
 }
+
+.hov:hover{
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+h4:hover{
+  color: blueviolet;
+  text-shadow: 0px 1px 1px blueviolet
+}
+.getStarted{
+  display: none;
+}
+
+
+
+@media  (min-width:600px) and (max-width:1000px){
+
+  .imageContainer {
+    display: block;
+  }
+
+  .theLatestbox {
+     
+      display: flex;
+      margin: 15px 0;
+  }
+  .theLatest {
+    display: block;
+  }
+  .homeContainer {
+    display: block;
+  }
+
+  
+  
+  .TheLatestImg {
+      max-width: 248px;
+  }
+  
+  .firstImage {
+  display: block;
+  }
+  
+  .secondImage {
+  display: none;
+  }
+  
+  .Ad{
+  display:none;
+  }
+  
+ 
+  .topPostMedia{
+              display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .topTextMedia{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+  }
+  
+.topPostImg {
+  width: 55%;
+}
+  
+  
+  .BollywoodContainer {
+  display: block;
+  }
+  
+   .LatestArtImgCon {
+  margin-bottom: -5rem;
+  }
+
+.MtoptText{ 
+     display: flex;
+  flex-direction: column;
+  justify-content: space-between;}
+
+  .MtopBox{
+    display: flex;
+    gap: 50px;
+  }
+
+  
+
+.commonContainer {
+    width: 70%;
+}
+  
+  }
+
+  @media (max-width:600px){
+
+
+    /* .center{
+    position: fixed;
+        left: 10%;
+        background-color: white;
+        z-index: 999;
+    } */
+
+    .LMobile{
+      display: block;
+    }
+    .firstImage {
+      display: block;
+      margin-top: 4rem;
+      }
+      
+      .secondImage {
+      display: none;
+      }
+    .LLocal{
+      display: none;
+    }
+
+    .imageContainer {
+      display: block;
+    }
+
+    .homeContainer {
+      display: block;
+    }
+    
+    
+    /* .moLogoPar {
+        display: flex;
+        justify-content: center;
+    } */
+    
+    
+    
+/*    
+    .mLogoSub {
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        height: 4rem;
+        align-items: center;
+        border-bottom: 2px solid grey;
+        position: fixed;
+        background-color: white;
+        z-index: 999;
+    } */
+    
+    
+    /* box-shadow: 0px 3px 6px #0000001A; */
+/*   
+    .MenuBar {
+        height: 1rem;
+    } */
+/*     
+    Menu {
+        width: 2rem;
+        height: 5px;
+        background-color: grey;
+        margin: 3px 0;
+    }
+     */
+    
+    .subContainer {
+    
+        width: 90%;
+        /* margin-top: 4rem; */
+    }
+    .ArticleList{
+      margin-top: 4rem;
+    }
+    
+    
+    .BollywoodContainer {
+    display: block;
+    }
+    
+
+    
+    .Ad{
+    display:none;
+    }
+
+    .theLatest {
+      display: block;
+    }
+
+    
+.commonContainer {
+  width: 90%;
+  min-width: 90%;
+}
+
+
+.commonProfile {
+  margin-top: -3rem;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-bottom: 2REM;
+}
+.latestArtImg1 {
+  max-width: 130px;
+  max-height: 130px;
+}
+.LatestArtDetail {
+  /* padding-top: 0; */
+  line-height: 1rem;
+}
+.theComHeading{
+min-width: 100%;
+}
+
+.getStarted{
+  display: block;
+}
+  }    

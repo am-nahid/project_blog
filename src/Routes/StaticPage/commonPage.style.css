@@ -62,7 +62,7 @@
     max-width: 80%;
 }
 
-.theHeading{
+.theComHeading{
     text-align: center;
     /* padding: 10px 0px; */
     padding-bottom: 2rem;
@@ -95,3 +95,11 @@
     text-decoration: none;
     color: black;
 }
+
+.getStarted{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+
+}
+

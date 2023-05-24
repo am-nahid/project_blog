@@ -8,7 +8,7 @@ import StaticPage from "../Routes/StaticPage";
 
 const AppRoutes = () => {
     return(
-        <BrowserRouter>
+       
         <Routes>
             <Route path="/" element={<Home/>}/>
             <Route path="/Bollywood" element={<Bollywood/>}/>
@@ -30,7 +30,7 @@ const AppRoutes = () => {
 
             <Route path="*" element={<PageNotFound/>}/>
         </Routes>
-        </BrowserRouter>
+        
     )
 }
 

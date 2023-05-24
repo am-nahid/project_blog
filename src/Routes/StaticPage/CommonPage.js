@@ -1,8 +1,9 @@
 import React from 'react'
 import { Logo } from '../../Components'
 import "./commonPage.style.css"
-import { DateExt } from "../../Components";
+import { DateExt,GetStarted } from "../../Components";
 import {   Link, useLocation } from 'react-router-dom';
+
 
 
 const CommonPage = () => {
@@ -16,14 +17,18 @@ const CommonPage = () => {
             <div className='uniqueLogo'>
            <Link className='linkStyle' to={'/'}>< Logo /></Link>
            </div>
+           <div className='getStarted '><GetStarted/></div>
         </div>
+
+
+
         <div className='flexProperty'>
             <hr className='commonPageHr'/>
         </div>
         <div className='mainContainer'>
         <div className='commonContainer'>
             <div>
-                <h1 className='theHeading'>{location.state.title}</h1>
+                <h1 className='theComHeading'>{location.state.title}</h1>
             </div>
             <div className='commonProfile'>
                 <div className='commonPic1'>

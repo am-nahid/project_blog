@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { AppData } from '../../Components/Data'
-import { Logo, TopNavigation } from '../../Components'
+import { Logo, LogoMobile, TopNavigation } from '../../Components'
 import ArticleList from './ArticleList'
 import TopPost from './TopPost'
 import '../../App.css'
@@ -10,8 +10,9 @@ function Bollywood() {
     
   return (
     <>
-      <Logo/>
-      <TopNavigation/>
+    <div className='LMobile' ><LogoMobile/></div>
+    <div className='LLocal' ><Logo/>
+      <TopNavigation/></div>
       <Store>
       <div className="mainContainer">
         <div className="subContainer">
