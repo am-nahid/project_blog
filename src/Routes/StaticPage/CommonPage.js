@@ -9,7 +9,7 @@ const CommonPage = () => {
   
   
       const location = useLocation(); 
-    // console.log(location.state.title);
+  
   return (
     <div className='commonParent'>
         <div className='editLogo'>
